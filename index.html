@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Misión Equilibrio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section id="inicio">
+    <h1>Misión Equilibrio</h1>
+    <form id="userForm">
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" name="correo" placeholder="Correo electrónico" required />
+      <input type="text" name="rut" placeholder="RUT" required />
+      <button type="submit">Comenzar</button>
+    </form>
+  </section>
+
+  <section id="introduccion">
+    <h2>Introducción</h2>
+    <div id="video-container">
+      <div id="video"></div>
+    </div>
+    <div id="quiz-container"></div>
+  </section>
+
+  <section id="reflexion">
+    <h2>Reflexión final</h2>
+    <form id="reflexionForm">
+      <label>¿Qué fue lo más importante que aprendiste?</label>
+      <textarea name="preg1" required></textarea>
+      <label>¿Qué te gustaría profundizar?</label>
+      <textarea name="preg2" required></textarea>
+      <label>¿Cómo puedes aplicar lo aprendido?</label>
+      <textarea name="preg3" required></textarea>
+      <button type="submit">Guardar reflexión</button>
+    </form>
+  </section>
+
+  <section id="certificado">
+    <h2>Tu Certificado</h2>
+    <button onclick="generarCertificado()">Descargar PDF</button>
+    <div id="certificadoContainer"></div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="script.js"></script>
+</body>
+</html>
